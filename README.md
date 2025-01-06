@@ -1,6 +1,6 @@
 # AseScale
 Automates export of Aseprite files in different scales.  
-It currently supports `.png` format, and exports from x2 to x10 scales only.
+Supports `PNG` and `GIF` formats, and exports from x1 to x10 scales.
 
 ![preview of 'on start' and 'running' app](/preview.png)
 
@@ -8,12 +8,19 @@ It currently supports `.png` format, and exports from x2 to x10 scales only.
 > You need Aseprite installed to your system in order for this to work.
 
 ## Usage
-Simply drag and drop an Aseprite file, and the files will be exported on `~/Documents/AseScale` folder.
+Choose your preferred format and scales first.  
+Then, drag and drop **an* Aseprite file, and the files will be exported on `~/Documents/AseScale` folder.
+
+> [!IMPORTANT]  
+> *Drop 1 file at a time only. Multiple files at once isn't supported.
 
 ## Testing
-There's a `Test/test_smug.aseprite` you can test and it should generate the following:
+There's a `Test/test_smug.aseprite` you can test with the `PNG` *format option* and it should generate the following:
 
 ![preview of exported files](/export_test.png)
+
+> [!NOTE]  
+> Only at source. Not included in export builds.
 
 ## Docs
 The program uses the following functions in order to work.
@@ -34,8 +41,8 @@ The program uses the following functions in order to work.
     - Example: `aseprite -b amogus.png --scale 4 --save-as amogus_x4.png`
 
 ## To-do
-- [ ] Add `.gif` format
-- [ ] Add scale options
+- [x] Add `.gif` format
+- [x] Add scale options
 
 ## License
 ### AseScale
